@@ -136,6 +136,13 @@ body {
     -1px -3px 3px rgb(53, 36, 36);
 }
 
+.neuCard {
+    box-shadow: 1px 2px 3px rgb(70, 49, 49), 
+    -1px -1px 1px tomato;
+
+    /* min-width: 300px !important; */
+}
+
 .rectangle {
     width: 35vw;
     height: 100vh;
