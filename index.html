@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Portfolio Page</title>
+</head>
+<body>
+
+
+
+    <div class="containers">
+        <div class="top-right-corner">
+            <div class="d-flex justify-content-center text-center text-white">
+                <h6 class="inner"></h6>
+            </div>
+        </div>
+
+
+        <div class="rectangle p-5">
+            <div class="position-absolute text-white" style="bottom: 40px; right: 20px;">
+                <nav>
+                    <ul>
+                        <li><a onclick="button(this)" name="home" class="active homeBtn"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a onclick="button(this)" name="about" class="aboutBtn"><i class="fas fa-user-alt"></i>About Me</a></li>
+                        <li><a onclick="button(this)" name="skills"><i class="fas fa-image"></i>Skills</a></li>
+                        <li><a onclick="button(this)" name="projects"><i class="fas fa-envelope"></i>Some Projects</a></li>
+                        <li><a onclick="button(this)" name="education" class="educationBtn"><i class="fas fa-envelope"></i>Education</a></li>
+                        <li><a onclick="button(this)" name="contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="top">
+            
+            <div class="top-circle">
+                <div class="open">
+                    <button onclick="openBtn(this)" ><i class="fas fa-bars"></i></button></i>
+                </div>
+                <div class="close">
+                    <button onclick="closeBtn(this)" ><i class="fas fa-times"></i></button></i>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="content text-white" onclick="closeBtn()">
+
+            <div id="home" class="p-5 m-4">
+                <div>
+                    <div class="drop1"></div>
+                    <div class="drop2"></div>
+                    <div class="d-flex justify-content-center text-center">
+                        <h2 class="textword">I am Akinola Farouq Akinkunmi, <br> A Fullstack Web Developer.</h2>  
+                    </div>
+                    <div class="drop3"></div>
+                    <div class="drop4"></div>
+                    <div class="drop5"></div>
+                    
+                </div>
+            </div>
+            <br>
+            <hr class="bg-white">
+            <br>
+
+            <!-- for about me section -->
+            <div id="about">
+                <div class="text-center mb-5">
+                    <h3>About Me</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 mb-2">
+                        <img class="m-auto d-flex justify-content-center pt-5" style="border-radius: 50%;"  src=".//pic.png" alt="">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <h5 class="aboutMe">I am a Fullstack Web Developer (Backend-Heavy).
+                            I grew up on the streets of Lagos with a determined mindset. I have always been a curious person,
+                            always like to know how things work especially electronics. This brought me to always wanting to play with
+                            my dad's laptop and learnt the basics. Later in life i went ahead to enrol at <a href="https://globaltechsworld.net/">
+                            Globatechs World Computer Institute</a>, a company where i was trained in System Engineering and Repair.
+                             It really served my curiosity knowing how the computer system works. 
+                             My curiousity pushed me further to learn about the web. 
+                            Since then, i have been pushing myself to learn as many programming languages as i can. So far so good! 
+                            In life, you never stop learning and i will push myself to improve every single day. I think that's my strongest 
+                            attribute. 
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr class="bg-white">
+            <br>
+
+            <!-- for skills section -->
+            <div id="skills">
+                <div class="text-center mb-5">
+                    <h2>Main Skills</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-6">
+                        <i class="fas fa-desktop fa-7x"></i>
+                        <h3>System Engineering</h3>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <i class="fa-brands fa-html5 fa-7x"></i> 
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <i class="fa-brands fa-css3 fa-7x"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <i class="fa-brands fa-js fa-7x"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <i class="fa-brands fa-php fa-7x"></i>
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <i class="fa-brands fa-laravel fa-7x"></i>
+                        <h3>Laravel</h3>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <i class="fa-brands fa-dev fa-7x"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <i class="fa-solid fa-database fa-7x"></i>
+                        <h3>MySQL</h3>
+                    </div>                   
+                </div>                
+            </div>
+            <br>
+            <hr class="bg-white">
+            <br>
+
+            <!-- for projects section -->
+            <div id="projects">
+               <div class="text-center mb-3">
+                <h3>Some Projects</h3>
+               </div> 
+               <div class="p-2">
+                <ul>
+                    <li>KunBlog - <a class="text-white  text-decoration-none" href="https://kunblog.ng" target="_blank">https://kunblog.ng</a></li>
+                    <li>KunCommerce - <a class="text-white  text-decoration-none" href="https://github.com/kunmifab/kunCommerce" target="_blank">https://github.com/kunmifab/<br>kunCommerce</a></li>
+                    <li>Check other works on my github page - <a class="text-white" href="https://github.com/kunmifab" target="_blank">https://github.com/kunmifab</a></li>
+                </ul>
+               </div>
+            </div>
+            <br>
+            <hr class="bg-white">
+            <br>
+
+            <!-- for education section -->
+            <div id="education">
+                <div class="text-center mb-3">
+                    <h3>Educational Background</h3>
+                </div>
+                <br>
+                
+
+                <table class="table table-striped bg-dark text-white table-borderless table-responsive p-3">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Certification</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><small>2008-2014</small></td>
+                        <td><h6>WEST HALL COLLEGE, LAGOS</h6></td>
+                        <td><small>West African Senior Secondary Certificate</small></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><small>2015-2019</small></td>
+                        <td><h6>GLOBALTECHS WORLD COMPUTER INSTITUTE, LAGOS</h6></td>
+                        <td><small>Higher Diploma in System Engineering</small></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><small>2015-2021</small></td>
+                        <td><h6>UNIVERSITY OF ILORIN, ILORIN</h6></td>
+                        <td><small>B.Sc. Biochemistry</small></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <br>
+            <hr class="bg-white">
+            <br>
+
+            <div id="contact">
+                <div class="text-center mb-3">
+                    <p>Contact Me on <br><a class="text-white text-decoration-none" href="mailto:akinolaakinkunmifa@gmail.com">akinolaakinkunmifa@gmail.com</a></p>
+                    <h2>OR</h2>
+                    <a class="text-white" target="_blank" href="https://twitter.com/kunmifab"><i class="fa-brands fa-twitter fa-4x"></i></a>
+                    <a class="text-white" target="_blank" href="https://ng.linkedin.com/in/farouq-akinola-8bba881a7"><i class="fa-brands fa-linkedin fa-4x"></i></a>
+                </div>
+            </div>   
+        
+    </div>
+    <!-- end of content -->
+    </div>
+    <!-- end of containers -->
+
+    <footer style="background-color: tomato;" class="text-center text-white p-1">
+        <p><strong>Designed by Kunmi 2022</strong></p>
+        <a class="text-white" href="https://ng.linkedin.com/in/farouq-akinola-8bba881a7"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="text-white" href="https://twitter.com/kunmifab"><i class="fa-brands fa-twitter"></i></a>
+        <a class="text-white" href="https://github.com/kunmifab"><i class="fa-brands fa-github"></i></a>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
