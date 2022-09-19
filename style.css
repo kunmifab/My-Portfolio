@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
     box-sizing: border-box;
@@ -22,12 +24,20 @@ body {
     min-height: 100vh;
     transform-origin: top left;
     transition: transform 0.5s linear;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .circle.show-nav {
     transform: rotate(-20deg);
 }
 
+.textword {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    line-height: 4.3rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.5rem;
+}
 
 
 .top-circle-container {
@@ -41,13 +51,13 @@ body {
 .top-right-corner {
     position: fixed;
     background-color: tomato;
-    right: 45%;
+    right: -0.1%;
     top: 0px;
-    height: 30px;
-    width: 100px;
+    height: 25px;
+    width: 80px;
     z-index: 2;
     border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    /* border-bottom-right-radius: 50%; */
     box-shadow: 1px 3px 3px rgb(61, 35, 35), 
                 -1px -3px 3px rgb(53, 36, 36);
 }

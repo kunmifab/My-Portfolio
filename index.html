@@ -9,6 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <title>Portfolio Page</title>
 </head>
 <body>
@@ -18,7 +21,7 @@
     <div class="containers">
         <div class="top-right-corner">
             <div class="d-flex justify-content-center text-center text-white">
-                <h6 class="inner"></h6>
+                <h6 class="inner">Home</h6>
             </div>
         </div>
 
@@ -28,11 +31,11 @@
                 <nav>
                     <ul>
                         <li><a onclick="button(this)" name="home" class="active homeBtn"><i class="fas fa-home"></i>Home</a></li>
-                        <li><a onclick="button(this)" name="about" class="aboutBtn"><i class="fas fa-user-alt"></i>About Me</a></li>
-                        <li><a onclick="button(this)" name="skills"><i class="fas fa-image"></i>Skills</a></li>
-                        <li><a onclick="button(this)" name="projects"><i class="fas fa-envelope"></i>Some Projects</a></li>
-                        <li><a onclick="button(this)" name="education" class="educationBtn"><i class="fas fa-envelope"></i>Education</a></li>
-                        <li><a onclick="button(this)" name="contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                        <li><a onclick="button(this)" name="about" class="aboutBtn"><i class="fa-solid fa-info"></i>About Me</a></li>
+                        <li><a onclick="button(this)" name="skills"><i class="fa-solid fa-brain"></i>Skills</a></li>
+                        <li><a onclick="button(this)" name="projects"><i class="fas fa-book"></i>Some Projects</a></li>
+                        <li><a onclick="button(this)" name="education" class="educationBtn"><i class="fas fa-graduation-cap"></i>Education</a></li>
+                        <li><a onclick="button(this)" name="contact"><i class="fas fa-phone"></i>Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,7 +61,7 @@
                     <div class="drop1"></div>
                     <div class="drop2"></div>
                     <div class="d-flex justify-content-center text-center">
-                        <h2 class="textword">I am Akinola Farouq Akinkunmi, <br> A Fullstack Web Developer.</h2>  
+                        <h4 class="textword">I am Akinola Farouq Akinkunmi, <br> A Fullstack Web Developer.</h4>  
                     </div>
                     <div class="drop3"></div>
                     <div class="drop4"></div>
@@ -67,7 +70,9 @@
                 </div>
             </div>
             <br>
+            <br>
             <hr class="bg-white">
+            <br>
             <br>
 
             <!-- for about me section -->
@@ -80,7 +85,7 @@
                         <img class="m-auto d-flex justify-content-center pt-5" style="border-radius: 50%;"  src=".//pic.png" alt="">
                     </div>
                     <div class="col-lg-6 col-12">
-                        <h5 class="aboutMe">I am a Fullstack Web Developer (Backend-Heavy).
+                        <p class="aboutMe">I am a Fullstack Web Developer (Backend-Heavy).
                             I grew up on the streets of Lagos with a determined mindset. I have always been a curious person,
                             always like to know how things work especially electronics. This brought me to always wanting to play with
                             my dad's laptop and learnt the basics. Later in life i went ahead to enrol at <a href="https://globaltechsworld.net/">
@@ -90,7 +95,7 @@
                             Since then, i have been pushing myself to learn as many programming languages as i can. So far so good! 
                             In life, you never stop learning and i will push myself to improve every single day. I think that's my strongest 
                             attribute. 
-                        </h5>
+                            </p>
                     </div>
                 </div>
             </div>
@@ -207,7 +212,7 @@
                     <p>Contact Me on <br><a class="text-white text-decoration-none" href="mailto:akinolaakinkunmifa@gmail.com">akinolaakinkunmifa@gmail.com</a></p>
                     <h2>OR</h2>
                     <a class="text-white" target="_blank" href="https://twitter.com/kunmifab"><i class="fa-brands fa-twitter fa-4x"></i></a>
-                    <a class="text-white" target="_blank" href="https://ng.linkedin.com/in/farouq-akinola-8bba881a7"><i class="fa-brands fa-linkedin fa-4x"></i></a>
+                    <a class="text-white" target="_blank" href="https://ng.linkedin.com/in/Akinolaakinkunmifa"><i class="fa-brands fa-linkedin fa-4x"></i></a>
                 </div>
             </div>   
         
@@ -218,7 +223,7 @@
 
     <footer style="background-color: tomato;" class="text-center text-white p-1">
         <p><strong>Designed by Kunmi 2022</strong></p>
-        <a class="text-white" href="https://ng.linkedin.com/in/farouq-akinola-8bba881a7"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="text-white" href="https://ng.linkedin.com/in/Akinolaakinkunmifa"><i class="fa-brands fa-linkedin"></i></a>
         <a class="text-white" href="https://twitter.com/kunmifab"><i class="fa-brands fa-twitter"></i></a>
         <a class="text-white" href="https://github.com/kunmifab"><i class="fa-brands fa-github"></i></a>
     </footer>
