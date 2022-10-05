@@ -258,12 +258,29 @@ nav a:hover {
 }
 
 #projects a {
-    font-size: larger;
+    /* font-size: larger; */
+    border: 1px tomato solid !important;
+}
+
+#projects hr {
+    background-color: tomato !important;
+}
+
+#projects img {
+    border-radius: 2rem;
+    border: 2px rgb(56, 72, 131) solid;
+    max-height: 30vh;
+    min-width: 60vw;
 }
 
 #about a {
     color: tomato;
     text-decoration: none;
+}
+
+#about img {
+    border-bottom: 4px tomato solid;
+    border-left: 4px tomato solid;
 }
 
 #skills i:hover {
